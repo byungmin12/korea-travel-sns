@@ -44,3 +44,7 @@ bin/
 
 ### environments
 .env
+
+### Crawling
+/src/main/kotlin/com/korea_travel/korea_travel_sns_project/controller/CrawlingSnsController.kt
+/src/main/kotlin/com/korea_travel/korea_travel_sns_project/service/CrawlingSnsService.kt
