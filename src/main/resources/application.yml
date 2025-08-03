@@ -1,0 +1,21 @@
+spring:
+  context:
+    initializer:
+      classes: com.korea_travel_korea_travel_sns_project.config.DotenvApplicationContextInitializer
+
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: ${DB_DRIVER_CLASS}
+
+server:
+  port: ${SERVER_PORT:8080}                  # env 없으면 기본 8080 사용
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
