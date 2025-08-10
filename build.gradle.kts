@@ -35,6 +35,7 @@ dependencies {
 
     // ✅ [5] 크롤링 (Selenium + WebDriverManager)
     implementation("org.seleniumhq.selenium:selenium-java:4.21.0")
+    implementation("io.github.bonigarcia:webdrivermanager:5.8.0")
 
     // ✅ [6] API 문서화
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")

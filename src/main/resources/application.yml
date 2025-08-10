@@ -13,9 +13,20 @@ spring:
 
 server:
   port: ${SERVER_PORT:8080}                  # env 없으면 기본 8080 사용
+  servlet:
+    context-path: "/api"
 
 management:
   endpoints:
     web:
       exposure:
         include: health
+
+app:
+  config:
+    growth_core_id: ${GROWTH_CORE_ID}
+    growth_core_password: ${GROWTH_CORE_PASSWORD}
+  url:
+    cc_login: ${CC_LOGIN}
+    cc_home: ${CC_HOME}
+    instagram_like: ${CC_INSTAGRAM_ADD_LIKE}
